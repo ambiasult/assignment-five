@@ -1,11 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment Five</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-    
+    <header class="flex justify-between p-6">
+        <section class="flex gap-3 ">
+            <div>
+                <img class="w-[50px] h-[50px]" src="./assets/logo.png" alt="">
+            </div>
+            <div>
+                <h2 class="text-green-800 font-bold">Emergency<br>Service</h2>
+            </div>
+        </section>
+
+        <section class="flex gap-3">
+            <div>
+                <button class="btn bg-green-50 rounded-full w-[100px] h-[40px] text-center">
+                    <p class="font-bold">0</p>
+                    <img class="w-[23.25px] h-[23.22px]" src="./assets/heart1.png" alt="">
+                </button>
+            </div>
+            <div>
+                <button class="btn bg-green-50 rounded-full w-[100px] h-[40px]">
+                    <p class="font-bold">100</p>
+                    <img class="w-[23px] h-[22px]" src="./assets/coin.png" alt="">
+                </button>
+            </div>
+
+            <div>
+                <button class="btn bg-green-600 rounded-full w-[100px] h-[40px] "><span class="text-white">2
+                        Copy</span></button>
+            </div>
+        </section>
+
+    </header>
+
+    <main class="pt-3">
+        <section>
+            <div
+                class="flex flex-col items-center justify-center bg-gradient-to-r from-green-950 via-green-800 to-green-950 p-10 gap-2">
+                <img class="w-[70px] h-[70px] relative -top-4" src="./assets/logo-dark.png" alt="">
+                <h1 class="text-white font-bold text-3xl">Emergency Service Directory</h1>
+                <p class="text-white font-bold">Government Emergency Services at Your Fingertip – A Project by
+                    Government of the People’s Republic of Bangladesh</p>
+            </div>
+        </section>
+
+        <section id="service-container" class="w-11/12 mx-auto py-10 grid grid-cols-12 gap-">
+         <section id="service-box" class="col-span-9 flex">
+
+                <!-- Card start -->
+                <section class="grid grid-cols-3 gap-3">
+
+                        <div class="card w-[260px] bg-[#f0e8e7] shadow-md rounded-xl p-1">
+                            <div class="card-body">
+
+                                <section class="flex justify-between">
+                                <div class="bg-[#e7c0c0] w-[40px] h-[35px] rounded-xl flex justify-center items-center">
+                                    <img class="w-[20px] h-[20px]" src="./assets/emergency.png" alt="">
+                                </div>
+                                <div>
+                                    <img class="w-[20px] h-[20px]"  src="./assets/heart.png" alt="">
+                                </div>
+                                </section>
+                                <h2 class="card-title font-bold">National Emergency Number</h2>
+                                <p class="text-gray-500">National Emergency</p>
+                                <h1 class="font-bold text-2xl">999</h1>
+                                <div class="bg-gray-300 w-[50px] rounded-full text-center"><span
+                                class="text-gray-400">All</span>
+                                </div>
+
+                                <div class="card-actions justify-between mt-4">
+                                    <div class="badge badge-outline w-[80px] h-[30px] ">
+                                        <img class="w-[15px] h-[15px]" src="./assets/paste.png" alt="">Copy
+                                    </div>
+                                    <div class="badge badge-outline w-[80px] h-[30px] bg-green-700">
+                                        <img class="w-[20px] h-[20px]" src="./assets/telephone.png" alt="">
+                                        <span class="text-white">Call</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End -->
+
+                   <!-- Card start -->
+             
+                        <div class="card w-[260px] bg-[#f0e8e7] shadow-md rounded-xl p-1">
+                            <div class="card-body">
+
+                                <section class="flex justify-between">
+                                <div class="bg-[#e7c0c0] w-[40px] h-[35px] rounded-xl flex justify-center items-center">
+                                    <img class="w-[20px] h-[20px]" src="./assets/police.png" alt="">
+                                </div>
+                                <div>
+                                    <img class="w-[20px] h-[20px]"  src="./assets/heart.png" alt="">
+                                </div>
+                                </section>
+
+                                <h2 class="card-title font-bold">Police Helpline Number</h2>
+                                <p class="text-gray-500">Police</p>
+                                <h1 class="font-bold text-2xl">999</h1>
+                                <div class="bg-gray-300 w-[50px] rounded-full text-center"><span
+                                class="text-gray-400">Police</span>
+                                </div>
+
+                                <div class="card-actions justify-between mt-4">
+                                    <div class="badge badge-outline w-[80px] h-[30px] ">
+                                        <img class="w-[15px] h-[15px]" src="./assets/paste.png" alt="">
+                                        Copy
+                                    </div>
+                                    <div class="badge badge-outline w-[80px] h-[30px] bg-green-700">
+                                        <img class="w-[20px] h-[20px]" src="./assets/telephone.png" alt="">
+                                        <span class="text-white">Call</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End -->
+
+                     <!-- Card start -->
+
+                        <div class="card w-[260px] bg-[#f0e8e7] shadow-md rounded-xl p-1">
+                            <div class="card-body">
+
+                                <section class="flex justify-between">
+                                <div class="bg-[#e7c0c0] w-[40px] h-[35px] rounded-xl flex justify-center items-center">
+                                    <img class="w-[20px] h-[20px]" src="./assets/fire-service.png" alt="">
+                                </div>
+                                <div>
+                                    <img class="w-[20px] h-[20px]" src="./assets/heart.png" alt="">
+                                </div>
+                                </section>
+
+                                <h2 class="card-title font-bold">Fire Service Number</h2>
+                                <p class="text-gray-500">Fire Service</p>
+                                <h1 class="font-bold text-2xl mt-0 mb-0">999</h1>
+                                <div class="bg-gray-300 w-[50px] rounded-full text-center"><span
+                                        class="text-gray-400">Fire</span>
+                                </div>
+
+                                <div class="card-actions justify-between mt-4">
+                                    <div class="badge badge-outline w-[80px] h-[30px] ">
+                                        <img class="w-[15px] h-[15px]" src="./assets/paste.png" alt="">Copy
+                                    </div>
+                                    <div class="badge badge-outline w-[80px] h-[30px] bg-green-700">
+                                        <img class="w-[20px] h-[20px]" src="./assets/telephone.png" alt="">
+                                        <span class="text-white">Call</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End -->
+
+                    <!-- card start -->
+                     <div class="card w-[260px] bg-[#f0e8e7] shadow-md rounded-xl p-1">
+                            <div class="card-body">
+
+                                 <section class="flex justify-between">
+                                <div class="bg-[#e7c0c0] w-[40px] h-[35px] rounded-xl flex justify-center items-center">
+                                    <img class="w-[20px] h-[20px]" src="./assets/ambulance.png" alt="">
+                                </div>
+                                <div>
+                                    <img class="w-[20px] h-[20px]" src="./assets/heart.png" alt="">
+                                </div>
+                                </section>
+
+                                <h2 class="card-title font-bold">Ambulance Service</h2>
+                                <p class="text-gray-500">Ambulance</p>
+                                <h1 class="font-bold text-2xl">1994-999999</h1>
+                                <div class="bg-gray-300 w-[50px] rounded-full text-center"><span
+                                        class="text-gray-400">Health</span>
+                                </div>
+
+                                <div class="card-actions justify-between mt-4">
+                                    <div class="badge badge-outline w-[80px] h-[30px] ">
+                                        <img class="w-[15px] h-[15px]" src="./assets/paste.png" alt="">Copy
+                                    </div>
+                                    <div class="badge badge-outline w-[80px] h-[30px] bg-green-700">
+                                        <img class="w-[20px] h-[20px]" src="./assets/telephone.png" alt="">
+                                        <span class="text-white">Call</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End -->
+
+                    <!-- card start -->
+
+                     <div class="card w-[260px] bg-[#f0e8e7] shadow-md rounded-xl p-1">
+                            <div class="card-body">
+
+                             <section class="flex justify-between">
+                                <div class="bg-[#e7c0c0] w-[40px] h-[35px] rounded-xl flex justify-center items-center">
+                                    <img class="w-[20px] h-[20px]" src="./assets/emergency.png" alt="">
+                                </div>
+                                <div>
+                                    <img class="w-[20px] h-[20px]" src="./assets/heart.png" alt="">
+                                </div>
+                                </section>
+
+                                <h2 class="card-title font-bold">Women & Child Helpline</h2>
+                                <p class="text-gray-500">Women & Child Helpline</p>
+                                <h1 class="font-bold text-2xl">109</h1>
+                                <div class="bg-gray-300 w-[50px] rounded-full text-center"><span
+                                        class="text-gray-400">Help</span>
+                                </div>
+
+                                <div class="card-actions justify-between mt-4">
+                                    <div class="badge badge-outline w-[80px] h-[30px] ">
+                                        <img class="w-[15px] h-[15px]" src="./assets/paste.png" alt="">Copy
+                                    </div>
+                                    <div class="badge badge-outline w-[80px] h-[30px] bg-green-700">
+                                        <img class="w-[20px] h-[20px]" src="./assets/telephone.png" alt="">
+                                        <span class="text-white">Call</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End -->
+
+                    <!-- card start -->
+
+                     <div class="card w-[260px] bg-[#f0e8e7] shadow-md rounded-xl p-1">
+                            <div class="card-body">
+
+                                <section class="flex justify-between">
+                                <div class="bg-[#e7c0c0] w-[40px] h-[35px] rounded-xl flex justify-center items-center">
+                                    <img class="w-[20px] h-[20px]" src="./assets/emergency.png" alt="">
+                                </div>
+                                <div>
+                                    <img class="w-[20px] h-[20px]" src="./assets/heart.png" alt="">
+                                </div>
+                                </section>
+
+                                <h2 class="card-title font-bold">Anti-Corruption Helpline</h2>
+                                <p class="text-gray-500">Anti-Corruption</p>
+                                <h1 class="font-bold text-2xl">106</h1>
+                                <div class="bg-gray-300 w-[50px] rounded-full text-center"><span
+                                class="text-gray-400">Govt</span>
+                                </div>
+
+                                <div class="card-actions justify-between mt-4">
+                                    <div class="badge badge-outline w-[80px] h-[30px] ">
+                                        <img class="w-[15px] h-[15px]" src="./assets/paste.png" alt="">Copy
+                                    </div>
+                                    <div class="badge badge-outline w-[80px] h-[30px] bg-green-700">
+                                        <img class="w-[20px] h-[20px]" src="./assets/telephone.png" alt="">
+                                        <span class="text-white">Call</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End -->
+
+                    <!-- card start -->
+
+                     <div class="card w-[260px] bg-[#f0e8e7] shadow-md rounded-xl p-1">
+                            <div class="card-body">
+
+                                <section class="flex justify-between">
+                                <div class="bg-[#e7c0c0] w-[40px] h-[35px] rounded-xl flex justify-center items-center">
+                                    <img class="w-[20px] h-[20px]" src="./assets/emergency.png" alt="">
+                                </div>
+                                <div>
+                                    <img class="w-[20px] h-[20px]" src="./assets/heart.png" alt="">
+                                </div>
+                                </section>
+                                <h2 class="card-title font-bold">Electricity Helpline</h2>
+                                <p class="text-gray-500">Electricity Outage</p>
+                                <h1 class="font-bold text-2xl">16216</h1>
+                                <div class="bg-gray-300 w-[70px] rounded-full text-center"><span
+                                        class="text-gray-400">Electricity</span>
+                                </div>
+
+                                <div class="card-actions justify-between mt-4">
+                                    <div class="badge badge-outline w-[80px] h-[30px] ">
+                                        <img class="w-[15px] h-[15px]" src="./assets/paste.png" alt="">Copy
+                                    </div>
+                                    <div class="badge badge-outline w-[80px] h-[30px] bg-green-700">
+                                        <img class="w-[20px] h-[20px]" src="./assets/telephone.png" alt="">
+                                        <span class="text-white">Call</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End -->
+
+                    <!-- card start -->
+                     
+                     <div class="card w-[260px] bg-[#f0e8e7] shadow-md rounded-xl p-1">
+                            <div class="card-body">
+
+                            <section class="flex justify-between">
+                                <div class="bg-[#e7c0c0] w-[40px] h-[35px] rounded-xl flex justify-center items-center">
+                                    <img class="w-[20px] h-[20px]" src="./assets/emergency.png" alt="">
+                                </div>
+                                <div>
+                                    <img class="w-[20px] h-[20px]" src="./assets/heart.png" alt="">
+                                </div>
+                                </section>
+                              
+                                <h2 class="card-title font-bold">Brac Helpline</h2>
+                                <p class="text-gray-500">Brac</p>
+                                <h1 class="font-bold text-2xl">16445</h1>
+                                <div class="bg-gray-300 w-[50px] rounded-full text-center"><span
+                                class="text-gray-400">NGO</span>
+                                </div>
+
+                                <div class="card-actions justify-between mt-4">
+                                    <div class="badge badge-outline w-[80px] h-[30px] ">
+                                        <img class="w-[15px] h-[15px]" src="./assets/paste.png" alt="">Copy
+                                    </div>
+                                    <div class="badge badge-outline w-[80px] h-[30px] bg-green-700">
+                                        <img class="w-[20px] h-[20px]" src="./assets/telephone.png" alt="">
+                                        <span class="text-white">Call</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End -->
+
+                    <!-- card start -->
+
+                     <div class="card w-[260px] bg-[#f0e8e7] shadow-md rounded-xl p-1">
+                            <div class="card-body">
+
+                                <section class="flex justify-between">
+                                <div class="bg-[#e7c0c0] w-[40px] h-[35px] rounded-xl flex justify-center items-center">
+                                    <img class="w-[20px] h-[20px]" src="./assets/emergency.png" alt="">
+                                </div>
+                                <div>
+                                    <img class="w-[20px] h-[20px]" src="./assets/heart.png" alt="">
+                                </div>
+                                </section>
+
+                                <h2 class="card-title font-bold">Bangladesh Railway Helpline </h2>
+                                <p class="text-gray-500">Bangladesh Railway</p>
+                                <h1 class="font-bold text-2xl">163</h1>
+                                <div class="bg-gray-300 w-[50px] rounded-full text-center"><span
+                                        class="text-gray-400">Travel</span>
+                                </div>
+
+                                <div class="card-actions justify-between mt-4">
+                                    <div class="badge badge-outline w-[80px] h-[30px] ">
+                                        <img class="w-[15px] h-[15px]" src="./assets/paste.png" alt="">Copy
+                                    </div>
+                                    <div class="badge badge-outline w-[80px] h-[30px] bg-green-700">
+                                        <img class="w-[20px] h-[20px]" src="./assets/telephone.png" alt="">
+                                        <span class="text-white">Call</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                </section>
+            </section>
+        
+            <!-- End -->
+
+            <aside id="card-box" class="bg-[#e9dad9] shadow-md rounded-xl p-4 col-span-3">
+                <h1 class="flex gap-2">
+                    <img class="w-[20px] h-[20px]" src="./assets/three-o-clock-clock.png" alt="">
+                    <span class="font-bold">Call History</span>
+                </h1>
+            </aside>
+        </section>
+    </main>
 </body>
+
 </html>
